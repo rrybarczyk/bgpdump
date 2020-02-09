@@ -7,8 +7,8 @@
 //! ## Reading a MRT file containing BPG messages
 //! ```
 //! use std::fs::File;
-//! use mrt_rs::{Reader, Record};
-//! use mrt_rs::bgp4mp::BGP4MP;
+//! use bgpdump::{Reader, Record};
+//! use bgpdump::bgp4mp::BGP4MP;
 //!
 //! fn main() {
 //!     // Open an MRT-formatted file.

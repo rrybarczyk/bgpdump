@@ -11,7 +11,7 @@ fn test_samples() {
             println!("Parsing: {:?}", file);
 
             // Create a new MRTReader with a Cursor such that we can keep track of the position.
-            let mut reader = mrt_rs::Reader { stream: file };
+            let mut reader = bgpdump::Reader { stream: file };
 
             // Read a (Header, Record) tuple.
             while let Some((_, record)) = reader.read().unwrap() {
